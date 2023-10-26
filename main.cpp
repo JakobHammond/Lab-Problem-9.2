@@ -19,3 +19,11 @@ bool isSortedIncreasing(int values[], int size){
     }
     return inc;
 }
+
+bool isSortedDec(int values[], int size){
+    bool dec = true;
+    for(int i = 1; i < size; i++){
+        if(values[i] > values[i - 1]) dec = false;
+    }
+    return dec;
+}
