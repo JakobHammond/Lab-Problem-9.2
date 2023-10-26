@@ -35,3 +35,13 @@ bool hasAdjecentDuplicates(int values[], int size){
     }
     return adjacentVal;
 }
+
+bool hasDuplicates(int values[], int size){
+    bool dupe = false;
+    for(int i = 0; i < size; i++){
+        for(int j = i + 1; i < size; j++){
+            if(values[i] == values[j]) dupe = true;
+        }
+    }
+    return dupe;
+}
