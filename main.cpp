@@ -27,3 +27,11 @@ bool isSortedDec(int values[], int size){
     }
     return dec;
 }
+
+bool hasAdjecentDuplicates(int values[], int size){
+    bool adjacentVal = false;
+    for(int i = 0; i < size; i++){
+        if(values[i] == values[i + 1]) adjacentVal = true;
+    }
+    return adjacentVal;
+}
